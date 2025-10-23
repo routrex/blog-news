@@ -1,0 +1,163 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.input-search {
+  background-color: #e8e8ea;
+}
+
+.input-search input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.page-title {
+  margin-top: 2rem;
+}
+
+.btn-technology {
+  width: fit-content;
+  border: none;
+  background-color: #4b6bfb;
+}
+
+.btn-demo {
+  background-color: #407fdd;
+  transition: all 0.3 ease;
+  -webkit-transition: all 0.3 ease;
+  -moz-transition: all 0.3 ease;
+  -ms-transition: all 0.3 ease;
+  -o-transition: all 0.3 ease;
+}
+
+.btn-demo:hover {
+  background-color: #2d78e8;
+}
+
+.footer-left {
+  max-width: 300px;
+}
+
+.links-grub ul li {
+  list-style: none;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.scrool-effect {
+  opacity: 0;
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px); 
+  transition: all 0.8s ease-out;
+  -webkit-transition: all 0.8s ease-out;
+  -moz-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+}
+
+.scrool-effect.active {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+/* Responsive Setiap Device */
+
+@media (max-width: 768px) {
+  .footer-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .card {
+    height: 300px !important; /* lebih kecil di tablet */
+  }
+
+  .card h2 {
+    font-size: 1.25rem; /* teks lebih kecil */
+  }
+
+  .container h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .text-brand {
+    display: block;
+    font-size: 1rem;
+    margin-top: 4px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 1.5rem !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .btn-technology {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border: none;
+  }
+
+  /* Supaya gambar full width kayak card utama */
+  .row > [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .container h2 {
+    font-size: 1rem;
+  }
+
+  .cta-title {
+    line-height: 1.5;
+  }
+
+  .break-mobile {
+    display: block;
+  }
+}
+
+/* Lebar offcanvas cuma 70% biar gak full */
+@media (max-width: 768px) {
+  .offcanvas.offcanvas-end {
+    width: 70% !important;
+  }
+}

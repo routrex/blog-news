@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog News</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="assets/icons/bootstrap-icons.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-white shadow py-3 sticky-top"
+    >
+      <div class="container">
+        <!-- Logo -->
+        <div class="flex-grow-1">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <div class="ms-1">
+              <img src="image/Union.png" alt="Logo" />
+              Meta<span class="text-dark fw-bold">Blog</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- MENU UNTUK DESKTOP -->
+        <div
+          class="d-none d-md-flex align-items-center justify-content-center flex-grow-1 me-3"
+        >
+          <ul class="navbar-nav mx-auto mb-2 mb-md-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#single-post">Single Post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pages">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- BAGIAN KANAN UNTUK DESKTOP -->
+        <div class="d-none d-md-flex align-items-center gap-3">
+          <!-- Search bar -->
+          <div
+            class="input-search d-flex align-items-center rounded-pill px-1 py-1 border"
+          >
+            <input
+              type="text"
+              class="form-control border-0 bg-transparent"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+            <div class="pe-3">
+              <i class="bi bi-search text-secondary"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- BAGIAN KANAN UNTUK MOBILE -->
+        <div class="d-flex align-items-center gap-2 d-md-none">
+          <!-- Tombol hamburger -->
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- AKHIR NAVBAR -->
+
+    <!-- TITLE NEWS -->
+    <div class="page-title text-center">
+      <h2 class="fw-bold">News Blog</h2>
+      <ul
+        class="d-flex justify-content-center align-items-center list-unstyled gap-4"
+      >
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item text-secondary">
+          <a class="nav-link" href="#blog">News</a>
+        </li>
+      </ul>
+    </div>
+    <!-- AKHIR TITLE NEWS -->
+
+    <!-- HERO SECTION -->
+    <section
+      id="carouselHero"
+      class="container my-5 carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="4000"
+    >
+      <div class="carousel-inner rounded-3 overflow-hidden shadow" id="home">
+        <!-- Slide 1 -->
+        <div
+          class="carousel-item active"
+          style="
+            background-image: url('image/bg-1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+          "
+        >
+          <div class="carousel-caption text-start pb-4 pb-md-5">
+            <button class="btn-technology badge bg-primary mb-2 p-2">
+              Technology
+            </button>
+            <h2 class="fw-bold text-white">
+              The Impact of Technology on the Workplace:
+              <br />
+              How Technology is Changing
+            </h2>
+            <div class="d-flex align-items-center mt-3">
+              <img
+                src="image/profile.png"
+                alt="author"
+                class="rounded-circle me-2"
+                style="width: 35px; height: 35px"
+              />
+              <span class="small text-white"
+                >Tracey Wilson • August 20, 2025</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div
+          class="carousel-item"
+          style="
+            background-image: url('image/bg-2.avif');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+          "
+        >
+          <div class="carousel-caption text-start pb-4 pb-md-5">
+            <button class="btn-technology badge bg-primary mb-2 p-2">
+              Business
+            </button>
+            <h2 class="fw-bold text-white">
+              How Remote Work Is Reshaping <br />
+              Global Business
+            </h2>
+            <div class="d-flex align-items-center mt-3">
+              <img
+                src="image/profile-Image-2.png"
+                alt="author"
+                class="rounded-circle me-2"
+                style="width: 35px; height: 35px"
+              />
+              <span class="small text-white"
+                >Elizabeth Slavin • August 21, 2025</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div
+          class="carousel-item"
+          style="
+            background-image: url('image/bg-3.avif');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+          "
+        >
+          <div class="carousel-caption text-start pb-4 pb-md-5">
+            <button class="btn-technology badge bg-primary mb-2 p-2">
+              Design
+            </button>
+            <h2 class="fw-bold text-white">
+              Modern UI Design Trends <br />
+              to Watch in 2025
+            </h2>
+            <div class="d-flex align-items-center mt-3">
+              <img
+                src="image/profile-Image-3.png"
+                alt="author"
+                class="rounded-circle me-2"
+                style="width: 35px; height: 35px"
+              />
+              <span class="small text-white"
+                >Rifal Struik • August 22, 2025</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Control Button  -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselHero"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselHero"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+    <!-- AKHIR HERO SECTION -->
+
+    <!-- Card News -->
+    <div class="container my-5">
+      <div class="row gy-4 justify-content-center px-2 px-sm-0">
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-md-4 col-lg-3 scrool-effect" id="blog">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img
+              src="image/news-1.png"
+              class="card-img-top img-fluid"
+              alt="gambar"
+              style="object-fit: cover; height: 200px"
+            />
+            <div class="card-body">
+              <button class="btn-technology badge bg-primary mb-2">
+                Technology
+              </button>
+              <p class="card-text fw-semi-bold">
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <img
+                  src="image/profile-Image-1.png"
+                  alt="author"
+                  class="rounded-circle me-2"
+                  style="width: 35px; height: 35px"
+                />
+                <span class="small text-muted"
+                  >Ernie Smith&nbsp; • &nbsp; August 20, 2025</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-md-4 col-lg-3 scrool-effect">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img
+              src="image/news-2.png"
+              class="card-img-top img-fluid"
+              alt="gambar"
+              style="object-fit: cover; height: 200px"
+            />
+            <div class="card-body">
+              <button class="btn-technology badge bg-primary mb-2">
+                Technology
+              </button>
+              <p class="card-text fw-semi-bold">
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <img
+                  src="image/profile-Image-2.png"
+                  alt="author"
+                  class="rounded-circle me-2"
+                  style="width: 35px; height: 35px"
+                />
+                <span class="small text-muted"
+                  >Elizabeth Slavin&nbsp; • &nbsp; August 20, 2025</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-md-4 col-lg-3 scrool-effect">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img
+              src="image/news-3.png"
+              class="card-img-top img-fluid"
+              alt="gambar"
+              style="object-fit: cover; height: 200px"
+            />
+            <div class="card-body">
+              <button class="btn-technology badge bg-primary mb-2">
+                Technology
+              </button>
+              <p class="card-text fw-semi-bold">
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <img
+                  src="image/profile-Image-3.png"
+                  alt="author"
+                  class="rounded-circle me-2"
+                  style="width: 35px; height: 35px"
+                />
+                <span class="small text-muted"
+                  >Tracey Wilson&nbsp; • &nbsp; August 20, 2025</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12 col-sm-md-4 col-lg-3 scrool-effect">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img
+              src="image/news-4.png"
+              class="card-img-top img-fluid"
+              alt="gambar"
+              style="object-fit: cover; height: 200px"
+            />
+            <div class="card-body">
+              <button class="btn-technology badge bg-primary mb-2">
+                Technology
+              </button>
+              <p class="card-text fw-semi-bold">
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <img
+                  src="image/profile-Image-4.png"
+                  alt="author"
+                  class="rounded-circle me-2"
+                  style="width: 35px; height: 35px"
+                />
+                <span class="small text-muted"
+                  >Tracey Wilson&nbsp; • &nbsp; August 20, 2025</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-12 col-sm-md-4 col-lg-3 scrool-effect" id="single-post">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img
+              src="image/news-5.png"
+              class="card-img-top img-fluid"
+              alt="gambar"
+              style="object-fit: cover; height: 200px"
+            />
+            <div class="card-body">
+              <button class="btn-technology badge bg-primary mb-2">
+                Technology
+              </button>
+              <p class="card-text fw-semi-bold">
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <img
+                  src="image/profile-Image-5.png"
+                  alt="author"
+                  class="rounded-circle me-2"
+                  style="width: 35px; height: 35px"
+                />
+                <span class="small text-muted"
+                  >Jason Francisco&nbsp; • &nbsp; August 20, 2025</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-12 col-sm-md-4 col-lg-3 scrool-effect">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img
+              src="image/news-6.png"
+              class="card-img-top img-fluid"
+              alt="gambar"
+              style="object-fit: cover; height: 200px"
+            />
+            <div class="card-body">
+              <button class="btn-technology badge bg-primary mb-2">
+                Technology
+              </button>
+              <p class="card-text fw-semi-bold">
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <img
+                  src="image/profile-Image-3.png"
+                  alt="author"
+                  class="rounded-circle me-2"
+                  style="width: 35px; height: 35px"
+                />
+                <span class="small text-muted"
+                  >Elizabeth Slavin&nbsp; • &nbsp; August 20, 2025</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col-12 col-sm-md-4 col-lg-3 scrool-effect">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img
+              src="image/news-7.png"
+              class="card-img-top img-fluid"
+              alt="gambar"
+              style="object-fit: cover; height: 200px"
+            />
+            <div class="card-body">
+              <button class="btn-technology badge bg-primary mb-2">
+                Technology
+              </button>
+              <p class="card-text fw-semi-bold">
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <img
+                  src="image/profile-Image-1.png"
+                  alt="author"
+                  class="rounded-circle me-2"
+                  style="width: 35px; height: 35px"
+                />
+                <span class="small text-muted"
+                  >Tracey Wilson&nbsp; • &nbsp; August 20, 2025</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col-12 col-sm-md-4 col-lg-3 scrool-effect">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img
+              src="image/news-8.png"
+              class="card-img-top img-fluid"
+              alt="gambar"
+              style="object-fit: cover; height: 200px"
+            />
+            <div class="card-body">
+              <button class="btn-technology badge bg-primary mb-2">
+                Technology
+              </button>
+              <p class="card-text fw-semi-bold">
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <img
+                  src="image/profile-image-2.png"
+                  alt="author"
+                  class="rounded-circle me-2"
+                  style="width: 35px; height: 35px"
+                />
+                <span class="small text-muted"
+                  >Elizabeth Slavin&nbsp; • &nbsp; August 20, 2025</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9  -->
+        <div class="col-12 col-sm-md-4 col-lg-3 scrool-effect" id="pages">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img
+              src="image/news-9.png"
+              class="card-img-top img-fluid"
+              alt="gambar"
+              style="object-fit: cover; height: 200px"
+            />
+            <div class="card-body">
+              <button class="btn-technology badge bg-primary mb-2">
+                Technology
+              </button>
+              <p class="card-text fw-semi-bold">
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <img
+                  src="image/profile-Image-1.png"
+                  alt="author"
+                  class="rounded-circle me-2"
+                  style="width: 35px; height: 35px"
+                />
+                <span class="small text-muted"
+                  >Ernie Smith&nbsp; • &nbsp; August 20, 2025</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="col-12 col-sm-md-4 col-lg-3 scrool-effect">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img
+              src="image/news-1.png"
+              class="card-img-top img-fluid"
+              alt="gambar"
+              style="object-fit: cover; height: 200px"
+            />
+            <div class="card-body">
+              <button class="btn-technology badge bg-primary mb-2">
+                Technology
+              </button>
+              <p class="card-text fw-semi-bold">
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <img
+                  src="image/profile-image-5.png"
+                  alt="author"
+                  class="rounded-circle me-2"
+                  style="width: 35px; height: 35px"
+                />
+                <span class="small text-muted"
+                  >Tracey Wilson &nbsp; • &nbsp; August 20, 2025</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="col-12 col-sm-md-4 col-lg-3 scrool-effect">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img
+              src="image/news-6.png"
+              class="card-img-top img-fluid"
+              alt="gambar"
+              style="object-fit: cover; height: 200px"
+            />
+            <div class="card-body">
+              <button class="btn-technology badge bg-primary mb-2">
+                Technology
+              </button>
+              <p class="card-text fw-semi-bold">
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <img
+                  src="image/profile-Image-4.png"
+                  alt="author"
+                  class="rounded-circle me-2"
+                  style="width: 35px; height: 35px"
+                />
+                <span class="small text-muted"
+                  >Jason Francisco &nbsp; • &nbsp; August 20, 2025</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="col-12 col-sm-md-4 col-lg-3 scrool-effect">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img
+              src="image/news-3.png"
+              class="card-img-top img-fluid"
+              alt="gambar"
+              style="object-fit: cover; height: 200px"
+            />
+            <div class="card-body">
+              <button class="btn-technology badge bg-primary mb-2">
+                Technology
+              </button>
+              <p class="card-text fw-semi-bold">
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <img
+                  src="image/profile-Image-3.png"
+                  alt="author"
+                  class="rounded-circle me-2"
+                  style="width: 35px; height: 35px"
+                />
+                <span class="small text-muted"
+                  >Rifal Struik &nbsp; • &nbsp; August 20, 2025</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- AKHIR CARD NEWS -->
+
+    <section class="text-center py-3 scrool-effect">
+      <div class="container">
+        <h2 class="fw-bold text-dark-emphasis mb-3 cta-title">
+          Pellentesque suscipit
+          <span class="break-mobile">fringilla libero eu.</span>
+        </h2>
+        <button class="btn-demo border-0 rounded-3 text-white p-2">
+          Get a Demo
+          <img class="text-center" src="image/Vector-white.png" alt="gambar" />
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer class="bg-light pt-5 pb-3 mt-5 border-top" id="contact">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- About -->
+          <div class="col-lg-3 col-md-6">
+            <h6 class="fw-bold mb-3">About</h6>
+            <p class="text-muted small">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </p>
+
+            <div class="gap-lg-2 gap-md-3 gap-sm-3">
+              <a
+                href="https://www.instagram.com/rifaldieka_/"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <img
+                  src="image/Icons-Instagram.png"
+                  alt="Instagram"
+                  style="background-color: black; border-radius: 20px"
+                />
+              </a>
+              <a href="#" class="text-decoration-none">
+                <img
+                  src="image/Icons-global.png"
+                  alt="global"
+                  style="background-color: black; border-radius: 20px"
+                />
+              </a>
+              <a href="#" class="text-decoration-none">
+                <img
+                  src="image/Icons-Twitter.png"
+                  alt="Twitter"
+                  style="background-color: black; border-radius: 20px"
+                />
+              </a>
+              <a href="#" class="text-decoration-none">
+                <img
+                  src="image/Icons-Youtube.png"
+                  alt="Youtube"
+                  style="background-color: black; border-radius: 20px"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Bagian Tengah -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Quick Link</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a href="#" class="text-muted text-decoration-none d-block mb-2"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-muted text-decoration-none d-block mb-2"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-muted text-decoration-none d-block mb-2"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-muted text-decoration-none d-block mb-2"
+                  >Archived</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-muted text-decoration-none d-block mb-2"
+                  >Author</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-muted text-decoration-none d-block mb-2"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bagian Tengah -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Category</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a href="#" class="text-muted text-decoration-none d-block mb-2"
+                  >Lifestyle</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-muted text-decoration-none d-block mb-2"
+                  >Technology</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-muted text-decoration-none d-block mb-2"
+                  >Travel</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-muted text-decoration-none d-block mb-2"
+                  >Business</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-muted text-decoration-none d-block mb-2"
+                  >Economy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-muted text-decoration-none d-block mb-2"
+                  >Sports</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-lg-5 col-md-5">
+            <div class="p-4 bg-white border rounded shadow-sm">
+              <h6 class="fw-bold mb-2">Weekly Newsletter</h6>
+              <p class="text-muted small mb-3">
+                Get blog articles and offers via email
+              </p>
+              <form class="d-flex flex-column flex-sm-row gap-2">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                />
+                <button class="btn btn-primary px-4" type="submit">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <!-- Footer Bottom -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center"
+        >
+          <div class="d-flex align-items-center mb-2 mb-md-0">
+            <img
+              src="image/Union-blue.png"
+              alt="logo"
+              class="me-2 footer-logo"
+            />
+            Meta <span class="text-dark fw-bold text-brand">Blog</span>
+          </div>
+
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <a
+              href="#"
+              class="text-decoration-none me-2 small d-inline-block text-secondary"
+              >Terms of Use</a
+            >
+            <a
+              href="#"
+              class="text-decoration-none me-2 small d-inline-block text-secondary"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-decoration-none me-2 small d-inline-block text-secondary"
+              >Cookie Policy</a
+            >
+          </div>
+
+          <div class="col-md-4 text-md-end text-center">
+            <small class="text-muted mb-0 small"
+              >© Copyright 2025. All Rights Reserved.</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- MENU RESPONSIVE PADA MOBILE -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title fw-semibold" id="offcanvasNavbarLabel">
+          Menu
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 gap-3">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#single-post">Single Post</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#pages">Pages</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- AKHIR MENU RESPONSIVE PADA MOBILE -->
+
+    <script src="js/script.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
